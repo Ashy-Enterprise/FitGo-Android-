@@ -1,17 +1,32 @@
-# FitGo
+# FitGo — Android
 
-FitGo is a sleek fitness and nutrition platform landing page and interactive user dashboard.
+FitGo is an Android fitness and nutrition app built with Kotlin and Jetpack Compose.
 
-This repository contains the static website assets for the FitGo product, including the public landing page and a demo dashboard.
+## Features
 
-## Files
+- Sleek dark-themed landing screen
+- Interactive dashboard with:
+  - Calorie ring and macro progress bars
+  - Step and water tracking
+  - Auto-generated daily workout plan
+  - Weekly activity chart
+  - Quick food logging
+  - BMR / TDEE / BMI readouts
 
-- `index.html` — Public landing page
-- `dashboard.html` — Interactive user dashboard demo
-- `css/style.css` — Shared styles
-- `js/main.js` — Landing page interactions
-- `js/dashboard.js` — Dashboard interactivity
+## Tech stack
 
-## Local preview
+- Kotlin
+- Jetpack Compose
+- Material 3
+- Navigation Compose
+- ViewModel
 
-Open `index.html` in a browser, or serve the folder with any static file server.
+## Build & run
+
+```bash
+export ANDROID_HOME=/path/to/Android/Sdk
+./gradlew :app:assembleDebug
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+```
+
+The app installs as `com.fitgo.app`.

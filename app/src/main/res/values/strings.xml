@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FitGo</string>
+    <string name="landing_tagline">Track. Plan. Transform.</string>
+    <string name="landing_body">Smart food logging, activity tracking, and AI-powered workouts for your goals.</string>
+    <string name="dashboard_title">Dashboard</string>
+</resources>
